@@ -32,10 +32,10 @@ namespace CriptareCaesar
             this.Hide();
         }
 
-        private polybios polybiosForm;
+        private Polybios polybiosForm;
         private void btn_polybios_Click(object sender, EventArgs e)
         {
-            polybiosForm = new polybios();
+            polybiosForm = new Polybios();
 
             polybiosForm.Top = this.Top;
             polybiosForm.Left = this.Left;

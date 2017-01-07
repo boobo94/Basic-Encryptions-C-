@@ -65,7 +65,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 85);
+            this.label2.Location = new System.Drawing.Point(12, 76);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(50, 13);
             this.label2.TabIndex = 2;
@@ -74,7 +74,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 142);
+            this.label3.Location = new System.Drawing.Point(12, 124);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 3;
@@ -82,21 +82,21 @@
             // 
             // tb_message
             // 
-            this.tb_message.Location = new System.Drawing.Point(12, 102);
+            this.tb_message.Location = new System.Drawing.Point(12, 92);
             this.tb_message.Name = "tb_message";
             this.tb_message.Size = new System.Drawing.Size(259, 20);
             this.tb_message.TabIndex = 4;
             // 
             // tb_password
             // 
-            this.tb_password.Location = new System.Drawing.Point(12, 158);
+            this.tb_password.Location = new System.Drawing.Point(12, 140);
             this.tb_password.Name = "tb_password";
             this.tb_password.Size = new System.Drawing.Size(260, 20);
             this.tb_password.TabIndex = 5;
             // 
             // tb_cypher
             // 
-            this.tb_cypher.Location = new System.Drawing.Point(12, 207);
+            this.tb_cypher.Location = new System.Drawing.Point(12, 190);
             this.tb_cypher.Name = "tb_cypher";
             this.tb_cypher.Size = new System.Drawing.Size(259, 20);
             this.tb_cypher.TabIndex = 6;
@@ -104,15 +104,16 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 191);
+            this.label4.Location = new System.Drawing.Point(12, 174);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 13);
+            this.label4.Size = new System.Drawing.Size(133, 13);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Cypher";
+            this.label4.Text = "Encrypted/Decrypted Text";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // btn_encrypt
             // 
-            this.btn_encrypt.Location = new System.Drawing.Point(15, 234);
+            this.btn_encrypt.Location = new System.Drawing.Point(12, 226);
             this.btn_encrypt.Name = "btn_encrypt";
             this.btn_encrypt.Size = new System.Drawing.Size(75, 23);
             this.btn_encrypt.TabIndex = 8;
@@ -122,7 +123,7 @@
             // 
             // btn_decrypt
             // 
-            this.btn_decrypt.Location = new System.Drawing.Point(197, 234);
+            this.btn_decrypt.Location = new System.Drawing.Point(197, 226);
             this.btn_decrypt.Name = "btn_decrypt";
             this.btn_decrypt.Size = new System.Drawing.Size(75, 23);
             this.btn_decrypt.TabIndex = 9;

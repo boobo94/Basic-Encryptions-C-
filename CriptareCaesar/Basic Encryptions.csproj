@@ -64,11 +64,11 @@
     <Compile Include="Playfair.Designer.cs">
       <DependentUpon>Playfair.cs</DependentUpon>
     </Compile>
-    <Compile Include="polybios.cs">
+    <Compile Include="Polybios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="polybios.Designer.cs">
-      <DependentUpon>polybios.cs</DependentUpon>
+    <Compile Include="Polybios.Designer.cs">
+      <DependentUpon>Polybios.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -93,8 +93,8 @@
     <EmbeddedResource Include="Playfair.resx">
       <DependentUpon>Playfair.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="polybios.resx">
-      <DependentUpon>polybios.cs</DependentUpon>
+    <EmbeddedResource Include="Polybios.resx">
+      <DependentUpon>Polybios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

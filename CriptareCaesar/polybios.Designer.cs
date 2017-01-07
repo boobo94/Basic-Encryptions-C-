@@ -1,6 +1,6 @@
 ﻿namespace CriptareCaesar
 {
-    partial class polybios
+    partial class Polybios
     {
         /// <summary>
         /// Required designer variable.
@@ -109,8 +109,9 @@
             this.btn_decrypt.TabIndex = 7;
             this.btn_decrypt.Text = "Decrypt";
             this.btn_decrypt.UseVisualStyleBackColor = true;
+            this.btn_decrypt.Click += new System.EventHandler(this.btn_decrypt_Click);
             // 
-            // polybios
+            // Polybios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -123,7 +124,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cb_alphabet);
-            this.Name = "polybios";
+            this.Name = "Polybios";
             this.Text = "polybios";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.polybios_FormClosed);
             this.ResumeLayout(false);

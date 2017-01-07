@@ -126,10 +126,8 @@ namespace CriptareCaesar
                 }
                 else
                 {
-                    
                     encrypted += cypherMatrix[a[0], b[1]];//add first letter
                     encrypted += cypherMatrix[b[0], a[1]];//add second letter
-                   
                 }
 
                 i += 2;
@@ -169,6 +167,11 @@ namespace CriptareCaesar
         private void btn_decrypt_Click(object sender, EventArgs e)
         {
             playfairCypher(1);
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

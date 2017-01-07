@@ -10,22 +10,22 @@ using System.Windows.Forms;
 
 namespace CriptareCaesar
 {
-    public partial class polybios : Form
+    public partial class Polybios : Form
     {
-        public polybios()
+        public Polybios()
         {
             InitializeComponent();
         }
 
         private void btn_encrypt_Click(object sender, EventArgs e)
         {
-            encrypt();
+            encrypt(0);
         }
 
         private string alphabet;
         private string[,] cypherMatrix;
         int matrixLength;
-        void encrypt()
+        void encrypt(int type)
         {
             alphabet = cb_alphabet.Text;
             string message = tb_message.Text.ToUpper();
@@ -44,16 +44,23 @@ namespace CriptareCaesar
                     }
                     else
                     {
-
                         cypherMatrix[i, j] = alphabet[k].ToString();
                         k++;
                     }
                 }
 
             string encrypted = null;
-            for(int i = 0; i < message.Length; i++)
+
+            if (type == 0)
             {
-                encrypted += searchCharacter(message[i].ToString());
+                for (int i = 0; i < message.Length; i++)
+                {
+                    encrypted += searchCharacter(message[i].ToString());
+                }
+            }
+            else
+            {
+                encrypted = decrypt(message);
             }
 
             tb_chyper.Text = encrypted;
@@ -65,16 +72,35 @@ namespace CriptareCaesar
             for (int i = 0; i < matrixLength; i++)
                 for (int j = 0; j < matrixLength; j++)
                 {
-                    if (cypherMatrix[i, j] == character)
+                    if (cypherMatrix[i, j].Contains(character))
                         return (j+1) + "" + (i+1);
                 }
 
             return "";
         }
 
+        private string decrypt(string message)
+        {
+            int i = 0;
+            string decrypted = "";
+
+            while( i < message.Length)
+            {
+                decrypted += cypherMatrix[int.Parse(message[i+1].ToString())-1, int.Parse(message[i].ToString())-1];
+                i += 2;
+            }
+
+            return decrypted;
+        }
+
         private void polybios_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btn_decrypt_Click(object sender, EventArgs e)
+        {
+            encrypt(1);
         }
     }
 }
