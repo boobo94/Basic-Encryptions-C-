@@ -33,6 +33,7 @@
             this.playfair = new System.Windows.Forms.Button();
             this.btn_vigenere = new System.Windows.Forms.Button();
             this.btn_transpozition = new System.Windows.Forms.Button();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // btn_caesar
@@ -85,11 +86,23 @@
             this.btn_transpozition.UseVisualStyleBackColor = true;
             this.btn_transpozition.Click += new System.EventHandler(this.btn_transpozition_Click);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(142, 239);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(130, 13);
+            this.linkLabel1.TabIndex = 5;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Bogdan Alexandru Militaru";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.btn_transpozition);
             this.Controls.Add(this.btn_vigenere);
             this.Controls.Add(this.playfair);
@@ -98,6 +111,7 @@
             this.Name = "Main";
             this.Text = "Main";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -108,5 +122,6 @@
         private System.Windows.Forms.Button playfair;
         private System.Windows.Forms.Button btn_vigenere;
         private System.Windows.Forms.Button btn_transpozition;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }

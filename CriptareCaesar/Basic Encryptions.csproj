@@ -58,11 +58,11 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="playfair.cs">
+    <Compile Include="Playfair.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="playfair.Designer.cs">
-      <DependentUpon>playfair.cs</DependentUpon>
+    <Compile Include="Playfair.Designer.cs">
+      <DependentUpon>Playfair.cs</DependentUpon>
     </Compile>
     <Compile Include="polybios.cs">
       <SubType>Form</SubType>
@@ -90,8 +90,8 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="playfair.resx">
-      <DependentUpon>playfair.cs</DependentUpon>
+    <EmbeddedResource Include="Playfair.resx">
+      <DependentUpon>Playfair.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="polybios.resx">
       <DependentUpon>polybios.cs</DependentUpon>

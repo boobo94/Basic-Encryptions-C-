@@ -11,3 +11,4 @@ E:\Facultate\Anul IV\Criptografie si securitate informationala\Laborator\Lab1\Cr
 E:\Facultate\Anul IV\Criptografie si securitate informationala\Laborator\Lab1\CriptareCaesar\CriptareCaesar\obj\Debug\Basic Encryptions.csproj.GenerateResource.Cache
 E:\Facultate\Anul IV\Criptografie si securitate informationala\Laborator\Lab1\CriptareCaesar\CriptareCaesar\obj\Debug\CriptareCaesar.exe
 E:\Facultate\Anul IV\Criptografie si securitate informationala\Laborator\Lab1\CriptareCaesar\CriptareCaesar\obj\Debug\CriptareCaesar.pdb
+E:\Facultate\Anul IV\Criptografie si securitate informationala\Laborator\Lab1\CriptareCaesar\CriptareCaesar\obj\Debug\Basic Encryptions.csprojResolveAssemblyReference.cache

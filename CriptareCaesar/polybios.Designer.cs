@@ -72,14 +72,14 @@
             // 
             this.tb_message.Location = new System.Drawing.Point(16, 98);
             this.tb_message.Name = "tb_message";
-            this.tb_message.Size = new System.Drawing.Size(100, 20);
+            this.tb_message.Size = new System.Drawing.Size(259, 20);
             this.tb_message.TabIndex = 3;
             // 
             // tb_chyper
             // 
             this.tb_chyper.Location = new System.Drawing.Point(16, 157);
             this.tb_chyper.Name = "tb_chyper";
-            this.tb_chyper.Size = new System.Drawing.Size(100, 20);
+            this.tb_chyper.Size = new System.Drawing.Size(256, 20);
             this.tb_chyper.TabIndex = 4;
             // 
             // label3

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -44,10 +45,10 @@ namespace CriptareCaesar
             this.Hide();
         }
 
-        private playfair playFairForm;
+        private Playfair playFairForm;
         private void playfair_Click(object sender, EventArgs e)
         {
-            playFairForm = new playfair();
+            playFairForm = new Playfair();
 
             playFairForm.Top = this.Top;
             playFairForm.Left = this.Left;
@@ -81,6 +82,12 @@ namespace CriptareCaesar
             transForm.Show();
 
             this.Hide();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo("https://github.com/boobo94/Basic-Encryptions-C-Sharp");
+            Process.Start(sInfo);
         }
     }
 }
