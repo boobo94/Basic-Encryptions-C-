@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CriptareCaesar
 {
-    public partial class Form1 : Form
+    public partial class Caesar : Form
     {
-        public Form1()
+        public Caesar()
         {
             InitializeComponent();
         }

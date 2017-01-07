@@ -18,10 +18,10 @@ namespace CriptareCaesar
         }
 
         
-        private Form1 form1;
+        private Caesar form1;
         private void btn_caesar_Click(object sender, EventArgs e)
         {
-            form1 = new Form1();
+            form1 = new Caesar();
             form1.Show();
             
         }

@@ -1,6 +1,6 @@
 ﻿namespace CriptareCaesar
 {
-    partial class Form1
+    partial class Caesar
     {
         /// <summary>
         /// Required designer variable.
