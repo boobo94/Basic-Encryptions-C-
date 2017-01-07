@@ -147,6 +147,7 @@
             this.Controls.Add(this.cb_alphabet);
             this.Name = "Vigenere";
             this.Text = "Vigenere";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Vigenere_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -146,6 +146,7 @@
             this.Controls.Add(this.cb_alphabet);
             this.Name = "transpozitie";
             this.Text = "transpozitie";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.transpozitie_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

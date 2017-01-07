@@ -72,6 +72,11 @@ namespace CriptareCaesar
             encrypt(0);
         }
 
+        private void transpozitie_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void btn_decrypt_Click(object sender, EventArgs e)
         {
             encrypt(1);

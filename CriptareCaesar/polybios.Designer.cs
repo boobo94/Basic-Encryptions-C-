@@ -125,6 +125,7 @@
             this.Controls.Add(this.cb_alphabet);
             this.Name = "polybios";
             this.Text = "polybios";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.polybios_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

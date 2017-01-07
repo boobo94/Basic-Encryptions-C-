@@ -146,6 +146,7 @@
             this.Controls.Add(this.cb_alphabet);
             this.Name = "playfair";
             this.Text = "playfair";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.playfair_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

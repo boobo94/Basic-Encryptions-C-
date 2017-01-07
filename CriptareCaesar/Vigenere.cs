@@ -104,5 +104,10 @@ namespace CriptareCaesar
         {
             encrypt(1);
         }
+
+        private void Vigenere_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

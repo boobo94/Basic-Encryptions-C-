@@ -88,5 +88,10 @@ namespace CriptareCaesar
         {
             encrypt(1);
         }
+
+        private void Caesar_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

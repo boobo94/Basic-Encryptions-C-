@@ -71,5 +71,10 @@ namespace CriptareCaesar
 
             return "";
         }
+
+        private void polybios_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

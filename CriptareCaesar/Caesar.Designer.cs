@@ -149,7 +149,7 @@
             this.label5.TabIndex = 11;
             this.label5.Text = "Password";
             // 
-            // Form1
+            // Caesar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -166,8 +166,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cb_alphabet);
-            this.Name = "Form1";
+            this.Name = "Caesar";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Caesar_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
