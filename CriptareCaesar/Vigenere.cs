@@ -27,7 +27,7 @@ namespace CriptareCaesar
         int matrixLength;
 
         private string encrypted;
-        void encrypt(int x)
+        void encrypt(int command)
         {
             string password = tb_password.Text.ToUpper();
             string message = tb_message.Text.ToUpper();
@@ -37,15 +37,13 @@ namespace CriptareCaesar
 
             VigenereMatrix();
 
-
-
             string encrypted = null;
 
-            if (x == 0)
+            if (command == 0)
             {
                 for (int i = 0; i < message.Length; i++)
                 {
-                    int mod = (int)i % password.Length;
+                    // search after element from intersection beteween letter from message and letter from password
                     encrypted += cypherMatrix[searchCharacter(message[i]), searchCharacter(password[(int)i % password.Length])];
                 }
             }
@@ -53,8 +51,8 @@ namespace CriptareCaesar
             {//decrypt
                 for (int i = 0; i < message.Length; i++)
                 {
-                    int mod = (int)i % password.Length;
-                    encrypted += cypherMatrix[searchCharacter(message[i]), searchCharacter(password[(int)i % password.Length])];
+                    int line = searchCharacter(password[(int)i % password.Length]);
+                    encrypted += alphabet[searchCharacterOnLine(message[i],line)];
                 }
             }
 
@@ -76,19 +74,19 @@ namespace CriptareCaesar
             int x = -1;
             for (int j = 0; j < alphabet.Length; j++)
             {
-                if (alphabet[j] == character)
+                if (alphabet[j].Equals(character))
                     x = j;
             }
 
             return x;
         }
 
-        public int searchCharacterOnLine(char character)
+        public int searchCharacterOnLine(char character, int line)
         {
             int x = -1;
             for (int j = 0; j < alphabet.Length; j++)
             {
-               // if (cypherMatrix[searchCharacter(ch),j] == character)
+                if (cypherMatrix[line, j] == character.ToString())
                     x = j;
             }
 
