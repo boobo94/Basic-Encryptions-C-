@@ -46,11 +46,12 @@ namespace CriptareCaesar
                 // fill the matrix with message
                 fillMatrix();
 
-                encrypted = encryptString();
+                encrypted = encryptString(command);
             }
             else
             {
-
+                encryptString(command);
+                encrypted = decryptString();
             }
 
             tb_encrypted.Text = encrypted;
@@ -88,17 +89,24 @@ namespace CriptareCaesar
             return true;
         }
 
-        private string encryptString()
+        private string encryptString(int command)
         {
             string encrypted = "";
             visited = new List<int>();
+            int p = 0;
 
             for (int i = 0; i < lengthLine; i++)
             {
                 int k = currentLine();
                 for (int j = 0; j < lengthColumn; j++)
                 {
-                    encrypted += cypherMatrix[k, j];
+                    if(command == 0)
+                        encrypted += cypherMatrix[k, j];
+                    else
+                    {
+                        cypherMatrix[k, j] = message[p].ToString();
+                        p++;
+                    }
                 }
             }
 
@@ -113,6 +121,18 @@ namespace CriptareCaesar
                     cypherMatrix[j, i] = message[k].ToString();
                     k++;
                 }
+        }
+
+        private string decryptString()
+        {
+            string decrypted = "";
+            int k = 0;
+            for (int i = 0; i < lengthColumn; i++)
+                for (int j = 0; j < lengthLine; j++)
+                {
+                    decrypted += cypherMatrix[j, i];
+                }
+            return decrypted;
         }
 
         private void btn_encrypt_Click(object sender, EventArgs e)

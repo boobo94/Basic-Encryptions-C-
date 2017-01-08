@@ -98,9 +98,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(12, 173);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 13);
+            this.label4.Size = new System.Drawing.Size(133, 13);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Encrypted";
+            this.label4.Text = "Encrypted/Decrypted Text";
             // 
             // tb_encrypted
             // 
@@ -129,7 +129,7 @@
             this.btn_decrypt.UseVisualStyleBackColor = true;
             this.btn_decrypt.Click += new System.EventHandler(this.btn_decrypt_Click);
             // 
-            // transpozitie
+            // Transpozition
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -144,7 +144,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cb_alphabet);
-            this.Name = "transpozitie";
+            this.Name = "Transpozition";
             this.Text = "transpozitie";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.transpozitie_FormClosed);
             this.ResumeLayout(false);
