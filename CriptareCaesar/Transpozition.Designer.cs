@@ -1,6 +1,6 @@
 ﻿namespace CriptareCaesar
 {
-    partial class transpozitie
+    partial class Transpozition
     {
         /// <summary>
         /// Required designer variable.

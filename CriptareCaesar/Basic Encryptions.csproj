@@ -72,11 +72,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="transpozitie.cs">
+    <Compile Include="Transpozition.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="transpozitie.Designer.cs">
-      <DependentUpon>transpozitie.cs</DependentUpon>
+    <Compile Include="Transpozition.Designer.cs">
+      <DependentUpon>Transpozition.cs</DependentUpon>
     </Compile>
     <Compile Include="Vigenere.cs">
       <SubType>Form</SubType>
@@ -105,8 +105,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="transpozitie.resx">
-      <DependentUpon>transpozitie.cs</DependentUpon>
+    <EmbeddedResource Include="Transpozition.resx">
+      <DependentUpon>Transpozition.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vigenere.resx">
       <DependentUpon>Vigenere.cs</DependentUpon>

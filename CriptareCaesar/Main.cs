@@ -71,10 +71,10 @@ namespace CriptareCaesar
             this.Hide();
         }
 
-        private transpozitie transForm;
+        private Transpozition transForm;
         private void btn_transpozition_Click(object sender, EventArgs e)
         {
-            transForm = new transpozitie();
+            transForm = new Transpozition();
 
             transForm.Top = this.Top;
             transForm.Left = this.Left;
